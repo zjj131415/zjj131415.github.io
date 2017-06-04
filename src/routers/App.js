@@ -49,9 +49,21 @@ export class App extends React.Component {
     render() {
         let imgFigures = [];
         imgData.map((item, index) => {
+            if (!this.state.imgsArrangeArr[index]) {
+                this.state.imgsArrangeArr[index] = {
+                    pos: {
+                        left: 0,
+                        top: 0
+                    },
+                    rotate: 0,
+                    isInverse: false,
+                    isCenter: false
+                };
+            }
             imgFigures.push(
                 <GalleryItem key={index}
                              title={item.title}
+                             arrange={this.state.imgsArrangeArr[index]}
                              ref={node => this.imgFigure = node}
                              desc={item.desc}
                              imgUrl={require(`../images/${index}.jpg`)}/>
@@ -167,8 +179,7 @@ export class App extends React.Component {
         this.Constant.vPosRange.topY[1] = halfStageH - halfImgH * 3;
         this.Constant.vPosRange.x[0] = halfStageW - imgW;
         this.Constant.vPosRange.x[1] = halfStageW;
-        console.log(this.Constant)
-        // this.rearrange(0);
+        this.rearrange(0)
     }
 
 }

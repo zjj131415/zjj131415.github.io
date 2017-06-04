@@ -12,7 +12,7 @@ html, body , .stage, #root, .img-sec{
   .gallery-item {
     width: 4.8rem;
     padding: .16rem;
-    //position: absolute;
+    position: absolute;
     //left: 0;
     //top: 0;
     border-radius: .16rem;
@@ -40,7 +40,7 @@ html, body , .stage, #root, .img-sec{
 }
 @keyframes puffIn {
   0% {
-    transform: rotate3d(1,5,2,360deg);
+    transform: rotate3d( 1, 5, 3, 360deg) scale3d( 1.5, 1.5, 1);
     //filter: blur(2px);scale3d(1.5, 1.5, 1)
   }
 

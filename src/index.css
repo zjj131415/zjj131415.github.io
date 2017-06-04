@@ -699,6 +699,7 @@ html, body, .stage, #root, .img-sec {
 .container .gallery-item {
   width: 4.8rem;
   padding: .16rem;
+  position: absolute;
   -webkit-border-radius: .16rem;
           border-radius: .16rem;
   -webkit-box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
@@ -727,8 +728,8 @@ html, body, .stage, #root, .img-sec {
 
 @-webkit-keyframes puffIn {
   0% {
-    -webkit-transform: rotate3d(1, 5, 2, 360deg);
-            transform: rotate3d(1, 5, 2, 360deg);
+    -webkit-transform: rotate3d(1, 5, 3, 360deg) scale3d(1.5, 1.5, 1);
+            transform: rotate3d(1, 5, 3, 360deg) scale3d(1.5, 1.5, 1);
   }
   100% {
   }
@@ -736,8 +737,8 @@ html, body, .stage, #root, .img-sec {
 
 @-moz-keyframes puffIn {
   0% {
-    -moz-transform: rotate3d(1, 5, 2, 360deg);
-         transform: rotate3d(1, 5, 2, 360deg);
+    -moz-transform: rotate3d(1, 5, 3, 360deg) scale3d(1.5, 1.5, 1);
+         transform: rotate3d(1, 5, 3, 360deg) scale3d(1.5, 1.5, 1);
   }
   100% {
   }
@@ -745,7 +746,7 @@ html, body, .stage, #root, .img-sec {
 
 @-o-keyframes puffIn {
   0% {
-    transform: rotate3d(1, 5, 2, 360deg);
+    transform: rotate3d(1, 5, 3, 360deg) scale3d(1.5, 1.5, 1);
   }
   100% {
   }
@@ -753,9 +754,9 @@ html, body, .stage, #root, .img-sec {
 
 @keyframes puffIn {
   0% {
-    -webkit-transform: rotate3d(1, 5, 2, 360deg);
-       -moz-transform: rotate3d(1, 5, 2, 360deg);
-            transform: rotate3d(1, 5, 2, 360deg);
+    -webkit-transform: rotate3d(1, 5, 3, 360deg) scale3d(1.5, 1.5, 1);
+       -moz-transform: rotate3d(1, 5, 3, 360deg) scale3d(1.5, 1.5, 1);
+            transform: rotate3d(1, 5, 3, 360deg) scale3d(1.5, 1.5, 1);
   }
   100% {
   }
