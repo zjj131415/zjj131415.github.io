@@ -1,0 +1,70 @@
+html, body , .stage, #root, .img-sec{
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  .img-sec {
+    position: relative;
+  }
+  .gallery-item {
+    width: 4.8rem;
+    padding: .16rem;
+    //position: absolute;
+    //left: 0;
+    //top: 0;
+    border-radius: .16rem;
+    box-shadow: 0 0 .2rem .1rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background: #fff;
+    animation-duration: 3s;
+  }
+  .gallery-fig {
+    .gallery-fig {
+
+    }
+    .gallery-desc {
+
+    }
+  }
+}
+
+.puffIn {
+  animation: puffIn 5s;
+}
+
+.puffOut {
+  animation-name: puffOut;
+}
+@keyframes puffIn {
+  0% {
+    transform: rotate3d(1,5,2,360deg);
+    //filter: blur(2px);scale3d(1.5, 1.5, 1)
+  }
+
+  100% {
+    //opacity: 1;
+    //transform-origin: 50% 50%;
+    //transform: scale(1,1);
+    //filter: blur(0px);
+  }
+}
+
+
+@keyframes puffOut {
+  0% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1,1);
+    -webkit-filter: blur(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2,2);
+    -webkit-filter: blur(2px);
+  }
+}
