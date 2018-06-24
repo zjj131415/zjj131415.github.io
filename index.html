@@ -1,1 +1,30 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><title>React App</title><link href="/static/css/main.c40c082d.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="/static/js/main.1d719ab4.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <title>React App</title>
+  <link href="/static/css/main.c40c082d.css" rel="stylesheet">
+</head>
+
+<body>
+  <video id="video" loop autoplay src="http://dl.stream.qqmusic.qq.com/C400001QzAAy3MdMnj.m4a?vkey=6498C92AC03B2BFEF8CCAAFD52BC49E8529D2295A4C13F7286EA22C78C25273EB2B633A5B9AF00976F4F87A14384152F0B28A2714ABC22E3&guid=549596041&uin=467627364&fromtag=66"></video>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script>
+    function audioAutoPlay(n) {
+      var o = document.getElementById(n);
+      o.play(), document.addEventListener("WeixinJSBridgeReady", function () {
+        o.play()
+      }, !1)
+    }
+    window.onload = function () {
+      audioAutoPlay("video")
+    }
+  </script>
+  <script type="text/javascript" src="/static/js/main.a9004905.js"></script>
+</body>
+
+</html>
